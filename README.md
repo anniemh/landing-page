@@ -29,4 +29,4 @@ This is the second project of the Front End Web Developer Nanodegree program. Th
 
 ## Credits
 - [Tutorial: Events and Animations with Intersection Observer API](https://cheewebdevelopment.com/vanilla-js-scroll-events-animations-with-intersectionobserver-api/)
-- [Tutorial: Master the Intersection Observer API](https://www.hweaver.com/intersection-observer-single-page-navigation/
+- [Tutorial: Master the Intersection Observer API](https://www.hweaver.com/intersection-observer-single-page-navigation/)
