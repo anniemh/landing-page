@@ -1,0 +1,100 @@
+#quotes {
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+    "t1"
+    "q1"
+    "q2"
+    "q3"
+    "q4"
+    "q5"
+    "q6";
+    padding: 2rem;
+}
+
+.quote {
+    background-color: #fff;
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.quote:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+
+.quote-heading {
+    grid-area: t1;
+}
+
+.quote-one {
+    grid-area: q1;
+    background-image: linear-gradient(to right, #e1c9f5 0%, #e1c9f5 50%, #e3f6f5 50%, #e3f6f5 100%);
+}
+
+.quote-two {
+    grid-area: q2;
+    background-image: linear-gradient(to right, #f6ebff 0%, #f6ebff 50%, #bdbcf5 50%, #bdbcf5 100%);
+}
+
+.quote-three {
+    grid-area: q3;
+    background-image: linear-gradient(to right, #f5e9ab 0%, #f5e9ab 50%, #b8d5f5 50%, #b8d5f5 100%);
+}
+
+.quote-four {
+    grid-area: q4;
+    background-image: linear-gradient(to right, #f6e3f4 0%, #f6e3f4 50%, #d5e7f5 50%, #d5e7f5 100%);
+}
+
+.quote-five {
+    grid-area: q5;
+    background-image: linear-gradient(to right, #babee8 0%, #babee8 50%, #d1e8d7 50%, #d1e8d7 100%);
+}
+
+.quote-six {
+    grid-area: q6;
+    background-image: linear-gradient(to right, #f5c4c7 0%, #f5c4c7 50%, #abb4f5 50%, #abb4f5 100%);
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+figcaption {
+    background-color: #fafafa;
+    padding: 0 0.3rem;
+}
+
+
+@media (min-width: 768px) {
+    #quotes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-gap: 1.5rem;
+        grid-template-areas:
+        "t1 t1"
+        "q1 q2"
+        "q3 q4"
+        "q5 q6";
+        padding: 2rem;
+    }
+}
+
+
+@media (min-width: 992px) {
+    #quotes {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-areas:
+        "t1 t1 t1"
+        "q1 q2 q3"
+        "q4 q5 q6";
+        padding: 2.5rem;
+    }
+}

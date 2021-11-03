@@ -1,0 +1,18 @@
+/* --- Highlight for Active Sections --- */
+
+[data-nav="About"].active-section {
+    background-image: linear-gradient(to right bottom, #fde8ed, #feeaeb, #ffecea, #ffeee9, #fef0e9, #fdf1e9, #fdf3e9, #fcf4ea, #fcf4ea, #fbf5ea, #fbf5ea, #faf6ea);
+}
+
+[data-nav="Quotes"].active-section {
+    background-image: linear-gradient(to left top, #fbe7f0, #f9e8f2, #f6e9f4, #f4eaf5, #f2ebf6, #f0ecf7, #efedf8, #edeef9, #ebeffb, #eaf1fc, #e8f3fd, #e7f4fd);
+}
+
+[data-nav="Articles"].active-section {
+    background-image: linear-gradient(to right bottom, #daf0f2, #d7f2ef, #d5f3ea, #d8f4e3, #ddf4db, #d6f2db, #cfefdb, #c8eddb, #bae5e5, #b9dce9, #c0d0e5, #c8c5d9);
+}
+
+[data-nav="Subscribe"].active-section {
+    background-color: #DAF0F2
+}
+
