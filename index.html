@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Quotes</title>
+    <!-- Load Styles -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- IDs are only used for sections to connect menu achors to sections -->
+        <header class="page-header">
+            <nav class="navbar-menu">
+                <a href="#" class="nav-logo">Daily Quotes</a>
+                <!-- Navigation starts as empty UL that will be populated with JS -->
+                <ul id="navbar-list"></ul>
+                <div class="ham">
+                    <img id="menuIcon" src="/img/menu_black_24dp.svg" alt="outlined menu">
+                    <img id="xIcon" src="/img/close_black_24dp.svg" alt="close">
+                </div>
+            </nav>
+        </header>
+        <main class="content">
+            <section id="home" class="main-hero" data-nav="Home">
+                <img class="img-hero" src="/img/header-img.jpg" alt="blooming yellow gerbera daisy flower in white and black mug">
+            </section>
+            <!-- Each Section has an ID (used for the anchor) and
+            a data attribute that will populate the li node.
+            Adding more sections will automatically populate nav.
+            The first section is set to active class by default -->
+            <section id="about" data-nav="About">
+                <div class="headline-text box">
+                    <h2>Why quotes?</h2>
+                </div>
+                <div class="about-text box">
+                    <p>Quotes are very powerful. On the surface, they are just a bunch of words but when you ponder over them they reveal powerful ideas that resonate with your very core.
+                    Personally, one of the biggest reasons why I love quotes is because of how relatable they can be. Quotes tend to be simplistic and easy to remember and they echo what is in our hearts.
+                    </p>
+                    <p>Here you can find a collection of beautiful quotes, introspective song lyrics, and inspirational quote articles that hopefully will inspire and motive you in your daily life.</p>
+                    <p>Whether you’re going through hard times, need an extra push to get stuff done, or enjoy sharing inspirational quotes on social media, Daily Quotes has you covered.</p>
+                </div>
+            </section>
+            <section id="quotes" data-nav="Quotes">
+                <div class="quote-heading box">
+                    <h2>Recent Quotes</h2>
+                </div>
+                <div class="quote quote-one">
+                    <figure class="box">
+                        <blockquote>
+                            <p>Be yourself; everyone else is already taken.</p>
+                        </blockquote>
+                        <figcaption>—Oscar Wilde</figcaption>
+                    </figure>
+                </div>
+                <div class="quote quote-two">
+                    <figure class="box">
+                        <blockquote>
+                            <p>All the wonders you seek are within yourself.</p>
+                        </blockquote>
+                        <figcaption>—Thomas Browne</figcaption>
+                    </figure>
+                </div>
+                <div class="quote quote-three">
+                    <figure class="box">
+                        <blockquote>
+                            <p>If you want to love others, I think you should love yourself first.</p>
+                        </blockquote>
+                        <figcaption>—RM</figcaption>
+                    </figure>
+                </div>
+                <div class="quote quote-four">
+                    <figure class="box">
+                        <blockquote>
+                            <p>Because I haven’t yet learned the simplest and most important thing of all: the world is difficult, and we are all breakable. So just be kind.</p>
+                        </blockquote>
+                        <figcaption>—Caitlin Moran, <cite>How to Build a Girl</cite></figcaption>
+                    </figure>
+                </div>
+                <div class="quote quote-five">
+                    <figure class="box">
+                        <blockquote>
+                            <p>Not so perfect, but so beautiful.</p>
+                        </blockquote>
+                        <figcaption>—Jin, <cite>Epiphany</cite></figcaption>
+                    </figure>
+                </div>
+                <div class="quote quote-six">
+                    <figure class="box">
+                        <blockquote>
+                            <p>Believe in your infinite potential. Your only limitations are those you set upon yourself.</p>
+                        </blockquote>
+                        <figcaption>—Roy T. Bennett, <cite>The Light in the Heart</cite></figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section id="articles" data-nav="Articles">
+                <div class="article-heading box">
+                    <h2>Featured Articles</h2>
+                </div>
+                <article class="post post-one">
+                    <div class="post-image">
+                        <img src="/img/article-img1.jpg" alt="white smoke digital wallpaper">
+                    </div>
+                    <div class="post-info">
+                        <h3>14 Hopeful Quotes About Mental Health</h3>
+                        <h4>October 21, 2021</h4>
+                    </div>
+                    <div class="post-link">
+                         <a href="#" class="button">Read Article</a>
+                    </div>
+                </article>
+                <article class="post post-two">
+                    <div class="post-image">
+                        <img src="/img/article-img2.jpg" alt="clear beverage jar with straw on table">
+                    </div>
+                    <div class="post-info">
+                        <h3>17 Quotes About Finding Joy in the Little Things</h3>
+                        <h4>October 20, 2021</h4>
+                    </div>
+                    <div class="post-link">
+                        <a href="#" class="button">Read Article</a>
+                    </div>
+                </article>
+                <article class="post post-three">
+                    <div class="post-image">
+                        <img src="/img/article-img3.jpg" alt="pink road bike">
+                    </div>
+                    <div class="post-info">
+                        <h3>20 Quotes About Teamwork Collaboration</h3>
+                        <h4>October 19, 2021</h4>
+                    </div>
+                    <div class="post-link">
+                        <a href="#" class="button">Read Article</a>
+                    </div>
+                </article>
+            </section>
+            <section id="subscribe" data-nav="Subscribe">
+                <div class="subscribe-header">
+                    <h2>Get in touch</h2>
+                    <p>If you want to submit a quote or article that has inspired you please get in touch with us</p>
+                </div>
+                <div class="form-container box">
+                    <form action="">
+                        <div class="form-name">
+                            <label for="name">Your Name:</label>
+                            <input type="text" name="name" placeholder="Enter your name here">
+                        </div>
+                        <div class="form-email">
+                            <label for="email">Your E-mail:</label>
+                            <input type="email" name="email" placeholder="Enter your e-mail here">
+                        </div>
+                        <div class="sub">
+                            <button type="submit" class="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="page-footer box">
+            <p>&copy Daily Quotes, 2021</p>
+        </footer>
+    </div>
+    <div class="back-to-top">
+        <img id="scrollToTop" class="scroll-top" src="/img/keyboard_double_arrow_up_black_24dp.svg" alt="keyboard double arrow up">
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>
