@@ -95,7 +95,7 @@ a {
 .main-hero .img-hero {
     max-width: 100%;
     height: auto;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 9 / 16;
     object-fit: cover;
 }
 
