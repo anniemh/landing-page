@@ -60,6 +60,10 @@
     background-image: linear-gradient(to right, #f5c4c7 0%, #f5c4c7 50%, #abb4f5 50%, #abb4f5 100%);
 }
 
+figure {
+    margin: 10px;
+}
+
 blockquote p::before {
     content: '\201C';
 }
