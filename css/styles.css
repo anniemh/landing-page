@@ -1,8 +1,8 @@
-@import url(/css/typography.css);
-@import url(/css/nav.css);
-@import url(/css/quote-cards.css);
-@import url(/css/articles.css);
-@import url(/css/highlight.css);
+@import url(css/typography.css);
+@import url(css/nav.css);
+@import url(css/quote-cards.css);
+@import url(css/articles.css);
+@import url(css/highlight.css);
 
 * {
     box-sizing: border-box;
