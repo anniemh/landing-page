@@ -90,17 +90,17 @@ anchors.forEach(anchor => {
 
 //set our options
 const observerOptions = {
-    threshold: 0.4
+    threshold: 0.38
 }
 
 //we write our callback function
 const highlight = entries => {
     //console.log(entries);
     entries.forEach(entry => {
-        if(entry.isIntersecting && entry.intersectionRatio >= 0.4) {
+        if(entry.isIntersecting && entry.intersectionRatio >= 0.38) {
             //const bounds = entry.boundingClientRect;
             //console.log(bounds);
-            //console.log(entry.target);
+            console.log(entry.target);
             //console.log(entry.intersectionRatio);
             //remove active class of first nav-link home
             document.querySelector('.active').classList.remove('active');
