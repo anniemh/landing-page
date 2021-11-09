@@ -32,15 +32,38 @@
 
 .post-one {
     grid-area: p1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+    "pimg"
+    "pinf"
+    "pl";
 }
 
 .post-two {
     grid-area: p2;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+    "pimg"
+    "pinf"
+    "pl";
 }
 
 .post-three {
     grid-area: p3;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+    "pimg"
+    "pinf"
+    "pl";
 }
+
+.post-image {
+    grid-area: pimg;
+}
+
 
 .post-image img {
     max-width: 100%;
@@ -49,12 +72,15 @@
 }
 
 .post-info {
+    grid-area: pinf;
     text-align: center;
     padding: 0 0.5rem;
 }
 
 .post-link {
+    grid-area: pl;
     margin-bottom: 3.5rem;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
